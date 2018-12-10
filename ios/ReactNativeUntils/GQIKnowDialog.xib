@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GQIKnowDialog">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnX-pN-OSX">
+                    <rect key="frame" x="0.0" y="0.0" width="304" height="99.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fib-bd-2fZ">
+                    <rect key="frame" x="-20" y="120" width="344" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="cVd-cZ-ugV"/>
+                    </constraints>
+                    <state key="normal" title="我知道了">
+                        <color key="titleColor" red="0.29019607843137252" green="0.6588235294117647" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="unO-Yw-8fh"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTO-mo-eed">
+                    <rect key="frame" x="-20" y="119.5" width="344" height="0.5"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="h0n-Uv-dZc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vnX-pN-OSX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5bR-48-huK"/>
+                <constraint firstItem="fib-bd-2fZ" firstAttribute="trailing" secondItem="gTO-mo-eed" secondAttribute="trailing" id="5re-T9-IEw"/>
+                <constraint firstItem="fib-bd-2fZ" firstAttribute="leading" secondItem="gTO-mo-eed" secondAttribute="leading" id="Dqs-BK-J1z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vnX-pN-OSX" secondAttribute="trailing" id="fEW-WS-Rom"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fib-bd-2fZ" secondAttribute="trailing" constant="-20" id="iQG-DV-rPI"/>
+                <constraint firstItem="fib-bd-2fZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="-20" id="jU6-6T-yPt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fib-bd-2fZ" secondAttribute="bottom" constant="-20" id="q57-Mm-Lkk"/>
+                <constraint firstItem="vnX-pN-OSX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sKL-vp-Tkb"/>
+                <constraint firstItem="fib-bd-2fZ" firstAttribute="top" secondItem="gTO-mo-eed" secondAttribute="bottom" id="u9B-av-bVc"/>
+                <constraint firstItem="gTO-mo-eed" firstAttribute="top" secondItem="vnX-pN-OSX" secondAttribute="bottom" constant="20" id="yaY-9Y-fgB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="messageLabel" destination="vnX-pN-OSX" id="8IP-Dr-Vky"/>
+            </connections>
+            <point key="canvasLocation" x="-430" y="325"/>
+        </view>
+    </objects>
+</document>
